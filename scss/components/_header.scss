@@ -1,5 +1,8 @@
 .header {
+  max-width: 1440px;
   //width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -9,6 +12,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  &__logo {
+    height: 24px;
+  }
 
   &__menu {
     display: flex;
@@ -26,5 +33,60 @@
     text-decoration: none;
     color: $black;
     line-height: 24px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
+
+.btn-sign-in {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: $black;
+}
+
+.btn-join {
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.25); 
+    transition: background-color 3; ///? плавный переход?
+  }
+}
+
+.burger-menu {
+  display: none;
+  background-color: $white;
+  padding: 10px 10px 7px;
+  box-shadow: none;
+
+  &__item {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 3px;
+    background-color: $black;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav {
+    &__menu {
+      display: none;
+    }
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  @media (max-width: 500px) {
+    .nav {
+      &__buttons {
+        display: none;
+      }
+    }
+  }
+}
+
