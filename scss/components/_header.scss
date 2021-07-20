@@ -1,0 +1,30 @@
+.header {
+  //width: 100%;
+  padding: 30px 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 400px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__menu__item {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: $black;
+    line-height: 24px;
+  }
+}
