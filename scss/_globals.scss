@@ -4,6 +4,10 @@ $white: #ffffff;
 $black: #000000;
 $grey-deco: #131314;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
