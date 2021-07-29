@@ -307,6 +307,27 @@ h3 {
   margin: 40px auto -220px;
 }
 
+@media (max-width: 950px) {
+  .features__item__img-desktop {
+    margin: 20px auto -60px;
+  }
+  .features__item__img-goal {
+    margin: -200px auto 0;
+  }
+  .features__item__img-fav {
+    margin: 20px auto -170px;
+  }
+  .features__item__img-stats {
+    margin: 20px auto -50px;
+  }
+  .features__item__img-coll {
+    margin: 45px auto -200px;
+  }
+  .features__item__img-read {
+    margin: 20px auto -130px;
+  }
+}
+
 @media (max-width: 450px) {
   .features {
     margin-top: 30px;

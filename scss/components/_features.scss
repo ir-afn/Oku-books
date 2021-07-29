@@ -73,6 +73,42 @@
   }
 }
 
+@media (max-width: 950px) {
+
+  .features {
+
+    &__item {
+
+      &__img {
+
+        &-desktop {
+          margin: 20px auto -60px;
+        }
+    
+        &-goal {
+          margin: -200px auto 0;
+        }
+    
+        &-fav {
+          margin: 20px auto -170px;
+        }
+    
+        &-stats {
+          margin: 20px auto -50px;
+        }
+    
+        &-coll {
+          margin: 45px auto -200px;
+        }
+    
+        &-read {
+          margin: 20px auto -130px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 450px) {
 
   .features {
