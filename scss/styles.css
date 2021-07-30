@@ -409,7 +409,8 @@ p {
 }
 
 .feedback__info {
-  width: 430px;
+  width: 100%;
+  max-width: 430px;
   padding-right: 40px;
 }
 
@@ -441,9 +442,158 @@ p {
   min-width: none;
   max-width: 70%;
   height: 2px;
+  margin: 30px auto 120px;
+  background-color: #F3F4F4;
+}
+
+@media (max-width: 1200px) {
+  .feedback {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .feedback__info {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feedback__info-wrap {
+    width: 80%;
+  }
+  .feedback__info__title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .feedback__info__text {
+    text-align: center;
+  }
+  .feedback__img {
+    width: 70%;
+    margin-top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feedback__img__tweet:last-child {
+    margin-left: unset;
+    margin-top: 20px;
+  }
+}
+
+.team {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.team__text {
+  min-width: 55%;
+  max-width: 700px;
+  margin: 30px auto 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.team__people {
+  max-width: 680px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+}
+
+.team__people__person__name {
+  margin: 25px 0 0;
+}
+
+.team__people__person__place {
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .borderline {
+    margin-bottom: 70px;
+  }
+  .team__title {
+    font-size: 28px;
+  }
+  .team__people {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.join {
+  position: relative;
+  text-align: center;
+  padding: 190px 30px 100px;
   background-color: #F3F4F4;
+}
+
+.join__text {
+  margin: 20px auto 10px;
+}
+
+.join-btn {
+  margin-top: 30px;
+}
+
+.curve {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.book-open {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 10%;
+}
+
+@media (max-width: 600px) {
+  .join {
+    padding: 80px 30px;
+  }
+  .join__text {
+    max-width: 90%;
+  }
+}
+
+.footer {
+  position: relative;
+  background-color: #F3F4F4;
+}
+
+.book {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 8%;
+}
+
+.dog {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+}
+
+@media (max-width: 600px) {
+  .book {
+    display: none;
+  }
+  .dog {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

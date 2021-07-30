@@ -13,7 +13,8 @@
   }
 
   &__info {
-    width: 430px;
+    width: 100%;
+    max-width: 430px;
     padding-right: 40px;
 
     &__title {
@@ -42,8 +43,44 @@
   min-width: none;
   max-width: 70%;
   height: 2px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  margin: 30px auto 120px;
   background-color: $grey-background;
+}
+
+@media (max-width: 1200px) {
+  .feedback {
+    flex-direction: column;
+    justify-content: center;
+
+    &__info {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+
+      &-wrap {
+        width: 80%;
+      }
+
+      &__title {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 30px;
+      }
+
+      &__text {
+        text-align: center;
+      }
+    }
+
+    &__img {
+      width: 70%;
+      margin-top: 30px;
+      align-items: center;
+
+      &__tweet:last-child {
+        margin-left: unset;
+        margin-top: 20px;
+      }
+    }
+  }
 }

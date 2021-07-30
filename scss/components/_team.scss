@@ -1,0 +1,45 @@
+.team {
+  text-align: center;
+  padding-bottom: 100px;
+
+  &__text {
+    min-width: 55%;
+    max-width: 700px;
+    margin: 30px auto 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &__people {
+    max-width: 680px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__person {
+      &__name {
+        margin: 25px 0 0;
+      }
+
+      &__place {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+
+  .borderline {
+    margin-bottom: 70px;
+  }
+
+  .team__title {
+    font-size: 28px;
+  }
+
+  .team__people {
+    flex-direction: column;
+  }
+}

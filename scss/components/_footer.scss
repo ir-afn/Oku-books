@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  background-color: $grey-background;
+}
+
+.book {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 8%;
+}
+
+.dog {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+}
+
+@media (max-width: 600px) {
+  .book {
+    display: none;
+  }
+
+  .dog {
+    width: 50%;
+  }
+}
