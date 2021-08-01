@@ -1,11 +1,43 @@
 .footer {
   position: relative;
+  padding-top: 50px;
   background-color: $grey-background;
+
+  &__menu {
+    padding: 0;
+    margin: 0;
+    margin-left: 48px;
+    list-style: none;
+    display: flex;
+    max-width: 25%;
+    justify-content: space-between;
+
+    &__item {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: $black;
+      text-decoration: none;
+
+    }
+
+    &__item:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    margin-bottom: 0;
+    margin-left: 48px;
+    margin-top: 30px;
+    font-size: 13px;
+    padding-bottom: 15px;
+  }
 }
 
 .book {
   position: absolute;
-  top: 0;
+  margin-bottom: 30px;
+  bottom: 100%;
   left: 3%;
   width: 8%;
 }
@@ -23,5 +55,12 @@
 
   .dog {
     width: 50%;
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__menu {
+    flex-direction: column;
   }
 }
